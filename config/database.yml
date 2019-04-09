@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+
+development:
+  <<: *default
+  database: runa_challenge
+
+test:
+  <<: *default
+  database: runa_challenge_test
+
+production:
+  <<: *default
+  database: runa_challenge
